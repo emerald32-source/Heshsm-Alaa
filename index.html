@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>هشام & آلاء | حفل زفاف</title>
+    <meta
+      name="description"
+      content="Hesham & Alaa wedding invitation. July 2, 2026."
+    />
+    <meta name="theme-color" content="#2d142c" />
+    <link rel="stylesheet" href="invitation.css" />
+    <style>
+      /* إزالة التظليل الأزرق عند الضغط على الهواتف المحمولة */
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      button, a, input, select, textarea {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body class="is-locked">
+    <div id="loadingScreen" class="loading-screen">
+      <div class="loading-spinner"></div>
+      <p class="loading-text">هشام & آلاء🤍</p>
+    </div>
+    
+    <div class="invite-shell">
+      <div
+        class="intro-overlay"
+        id="introOverlay"
+        role="button"
+        tabindex="0"
+        aria-label="Open invitation"
+      >
+        <img
+          class="intro-poster"
+          src="mh-w-evolope.jpg"
+          alt="Hesham and Alaa invitation envelope"
+        />
+        <video
+          id="introVideo"
+          class="intro-video"
+          preload="auto"
+          playsinline
+          muted
+          poster="mh-w-evolope.jpg"
+        >
+          <source src="mahmoud-heba-envelope.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <audio id="backgroundAudio" preload="auto" loop>
+        <source src="starpetal-grove.mp3" type="audio/mpeg" />
+      </audio>
+
+      <button
+        class="audio-toggle"
+        id="audioToggle"
+        type="button"
+        aria-label="Mute invitation music"
+        hidden
+      >
+        <span class="audio-toggle-icon" aria-hidden="true">
+          <svg class="audio-icon-on" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M4 14h3.8l4.6 4.2V5.8L7.8 10H4v4Zm12-6.5a5.5 5.5 0 0 1 0 9M18.6 5a9 9 0 0 1 0 14"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.7"
+            />
+          </svg>
+          <svg class="audio-icon-off" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M4 14h3.8l4.6 4.2V5.8L7.8 10H4v4Zm11.5-4.5 4.5 4.5m0-4.5-4.5 4.5"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.7"
+            />
+          </svg>
+        </span>
+        <span class="audio-toggle-label">Invitation music</span>
+      </button>
+
+      <div aria-hidden="true" class="invitation-floating-birds-layer">
+        <span class="ambient-creature invitation-floating-bird bird-one" data-kind="birds"></span>
+        <span
+          class="ambient-creature invitation-floating-bird invitation-floating-bird-secondary bird-two"
+          data-kind="birds"
+        ></span>
+        <span
+          class="ambient-creature invitation-floating-bird invitation-floating-bird-soft bird-three"
+          data-kind="birds"
+        ></span>
+        <span
+          class="ambient-creature invitation-floating-bird invitation-floating-bird-gentle bird-four"
+          data-kind="birds"
+        ></span>
+      </div>
+
+      <main class="invitation-page" id="invitationPage" aria-hidden="true">
+        <section class="hero-section">
+          <video class="hero-video" autoplay muted loop playsinline preload="auto">
+            <source src="mahmoud-heba-flowers.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-overlay"></div>
+        </section>
+
+        <section 
+          class="hero-countdown-section invitation-section invitation-reveal-section"
+          data-launch="2026-07-02T16:00:00+03:00"
+        >
+          <div class="names-surface reveal-on-scroll">
+            <h1 class="arabic-name">هشام</h1>
+            <span class="arabic-amp">&</span>
+            <h1 class="arabic-name">آلاء</h1>
+            <p class="wedding-label-ar">حفل زفاف</p>
+            <span aria-hidden="true" class="wedding-reveal-divider-ar"></span>
+            <p class="wedding-date-ar">02 / 07 / 2026</p>
+          </div>
+
+          <div class="countdown-surface">
+            <p class="section-kicker reveal-on-scroll" style="--reveal-delay: 0.05s;">الفرحة قربت</p>
+            <h2 class="section-title reveal-on-scroll" style="--reveal-delay: 0.1s;">العد التنازلي</h2>
+            <p class="section-description reveal-on-scroll" style="--reveal-delay: 0.15s;">
+              باقي من الزمن على يوم العمر
+            </p>
+
+            <div class="countdown-grid reveal-on-scroll" style="--reveal-delay: 0.2s;" aria-label="Countdown to Hesham and Alaa wedding">
+              <div class="countdown-item">
+                <span class="count-value" data-unit="days">00</span>
+                <span class="count-label">أيام</span>
+              </div>
+              <div class="countdown-item">
+                <span class="count-value" data-unit="hours">00</span>
+                <span class="count-label">ساعات</span>
+              </div>
+              <div class="countdown-item">
+                <span class="count-value" data-unit="minutes">00</span>
+                <span class="count-label">دقائق</span>
+              </div>
+              <div class="countdown-item">
+                <span class="count-value" data-unit="seconds">00</span>
+                <span class="count-label">ثواني</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="invitation-section invitation-reveal-section venue-section section-accent-left">
+          <img
+            class="section-accent"
+            src="style1-1.png"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+          />
+          <div class="section-heading">
+            <img
+              class="heading-icon reveal-on-scroll"
+              src="mosque-3.svg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+            />
+            <h2 class="section-title reveal-on-scroll" style="--reveal-delay: 0.08s;">مكان الحفل</h2>
+          </div>
+
+          <article class="venue-card reveal-on-scroll" style="--reveal-delay: 0.16s;">
+            <div class="venue-image-wrap">
+              <img
+                class="venue-image"
+                src="el-moshir-tantawy.png"
+                alt="El-Moshir Tantawy Mosque"
+                loading="lazy"
+              />
+            </div>
+            <div class="venue-map-wrap">
+              <div class="venue-map-frame">
+                <iframe
+                  title="map"
+                  src="https://googleusercontent.com/maps.google.com/0" 
+                  width="400" 
+                  height="300" 
+                  style="border:0;"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <div class="venue-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 21s6-4.6 6-10a6 6 0 1 0-12 0c0 5.4 6 10 6 10Z"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle cx="12" cy="11" r="2.2" stroke="currentColor" stroke-width="1.4" />
+              </svg>
+            </div>
+            <div class="venue-copy">
+              <p class="venue-overline">مكان عقد القران</p>
+              <p class="venue-name">Stage El-Nile</p>
+              <p class="venue-address" dir="rtl">١٠٩ شارع النيل - أول مرسى ع النيل في ميدان الجلاء بجانب كوبرى الجلاء - الدقى</p>
+              <a
+                class="primary-link"
+                href="https://googleusercontent.com/maps.google.com/1"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span class="primary-link-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M5 12.5 19 5l-7.4 14-1.5-5-5.1-1.5Z"
+                      fill="currentColor"
+                      opacity=".18"
+                    />
+                    <path
+                      d="M5 12.5 19 5l-7.4 14-1.5-5-5.1-1.5Z"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  <strong>الاتجاهات</strong>
+                  <small>فتح عبر خرائط جوجل</small>
+                </span>
+                <span class="primary-link-external" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M14 5h5v5M10 14 19 5M19 14v4a1 1 0 0 1-1 1h-12a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </article>
+        </section>
+
+        <section class="invitation-section invitation-reveal-section schedule-section section-accent-right">
+          <img
+            class="section-accent"
+            src="style1-6.png"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+          />
+          <div class="section-heading">
+            <img
+              class="heading-icon reveal-on-scroll"
+              src="formal-1.svg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+            />
+            <h2 class="section-title reveal-on-scroll" style="--reveal-delay: 0.08s;">مواعيد الحفل</h2>
+            <p class="section-subtitle reveal-on-scroll" style="--reveal-delay: 0.16s;">8:00 مساءً - 10:00 مساءً</p>
+          </div>
+
+          <div class="schedule-grid">
+            <div class="schedule-vine" aria-hidden="true">
+              <svg class="schedule-vine-svg" viewBox="0 0 80 560" preserveAspectRatio="none">
+                <path
+                  class="schedule-vine-line"
+                  d="M40 2 C34 64 48 111 39 176 C31 236 47 300 41 362 C36 424 43 493 40 558"
+                />
+                <g class="schedule-vine-leaves">
+                  <path
+                    d="M39 88c-14-10-24-12-31-7 6 12 16 17 31 14M42 147c15-13 26-16 34-10-6 14-17 20-33 17M38 240c-15-10-26-11-33-5 7 13 18 18 34 12M43 328c15-12 26-15 33-9-6 13-17 18-32 16M38 440c-13-9-23-10-31-5 7 12 17 17 30 13"
+                  />
+                  <circle cx="40" cy="88" r="2.2"></circle>
+                  <circle cx="41" cy="240" r="2.2"></circle>
+                  <circle cx="40" cy="440" r="2.2"></circle>
+                </g>
+              </svg>
+            </div>
+
+            <div class="schedule-row">
+              <article class="schedule-event schedule-event-left reveal-on-scroll">
+                <div class="schedule-event-icon">
+                  <img
+                    src="guest-arrival.svg"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>وصول الضيوف</h3>
+                <p>8:00 PM</p>
+              </article>
+              <span class="schedule-marker reveal-on-scroll" aria-hidden="true"></span>
+              <div class="schedule-spacer"></div>
+            </div>
+
+            <div class="schedule-row">
+              <div class="schedule-spacer"></div>
+              <span class="schedule-marker reveal-on-scroll" aria-hidden="true"></span>
+              <article class="schedule-event schedule-event-right reveal-on-scroll" style="--reveal-delay: 0.1s;">
+                <div class="schedule-event-icon">
+                  <img
+                    src="drink.svg"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>كتب الكتاب</h3>
+                <p>8:30 PM</p>
+              </article>
+            </div>
+
+            <div class="schedule-row">
+              <article class="schedule-event schedule-event-left reveal-on-scroll" style="--reveal-delay: 0.18s;">
+                <div class="schedule-event-icon">
+                  <img
+                    src="rings.svg"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                </div>
+                <div dir="rtl" class="schedule-event-rtl">
+                  <h3>ضيافة ترحيبية</h3>
+                  <p>9:00 PM</p>
+                </div>
+              </article>
+              <span class="schedule-marker reveal-on-scroll" aria-hidden="true" style="--reveal-delay: 0.18s;"></span>
+              <div class="schedule-spacer"></div>
+            </div>
+
+            <div class="schedule-row">
+              <div class="schedule-spacer"></div>
+              <span class="schedule-marker reveal-on-scroll" aria-hidden="true" style="--reveal-delay: 0.26s;"></span>
+              <article class="schedule-event schedule-event-right reveal-on-scroll" style="--reveal-delay: 0.26s;">
+                <div class="schedule-event-icon">
+                  <img
+                    src="end.svg"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                </div>
+                <h3>التهاني والترحيب</h3>
+                <p>9:30 PM</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="invitation-section invitation-reveal-section rsvp-section section-accent-left">
+          <img
+            class="section-accent"
+            src="style1-7.png"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+          />
+          <div class="section-heading">
+            <h2 class="section-title reveal-on-scroll">يسعدنا حضوركم</h2>
+            <p class="section-description reveal-on-scroll" style="--reveal-delay: 0.08s;">
+              We are pleased by your presence
+            </p>
+            <p class="section-note reveal-on-scroll" style="--reveal-delay: 0.16s;">
+              يرجى الرد قبل 25 يونيو 2026
+            </p>
+          </div>
+
+          <div class="rsvp-card reveal-on-scroll" style="--reveal-delay: 0.24s;">
+            <form class="rsvp-form" id="rsvpForm" action="https://formspree.io/f/mykayvlw" method="POST">
+              <div class="form-field">
+                <label for="guestName">الاسم بالكامل *</label>
+                <input id="guestName" name="الاسم" type="text" placeholder="الاسم الكريم" required />
+              </div>
+
+              <fieldset class="form-field attendance-group">
+                <legend>هل ستشرفنا بالحضور؟ *</legend>
+                <label class="choice-pill">
+                  <input type="radio" name="الحضور" value="نعم، بكل سرور" checked />
+                  <span>نعم، بكل سرور</span>
+                </label>
+                <label class="choice-pill">
+                  <input type="radio" name="الحضور" value="أعتذر عن الحضور" />
+                  <span>أعتذر عن الحضور</span>
+                </label>
+              </fieldset>
+
+              <div class="form-field">
+                <label>عدد المرافقين (شاملاً إياك)</label>
+                <div class="guest-stepper">
+                  <button type="button" class="stepper-button" data-step="-1" aria-label="Decrease guests">
+                    -
+                  </button>
+                  <span class="stepper-value" id="guestCountValue">1</span>
+                  <button type="button" class="stepper-button" data-step="1" aria-label="Increase guests">
+                    +
+                  </button>
+                </div>
+                <input id="guestCount" name="عدد الأفراد" type="hidden" value="1" />
+              </div>
+
+              <div class="form-field">
+                <label for="messageForCouple">تهنئة للعروسين (اختياري)</label>
+                <textarea
+                  id="messageForCouple"
+                  name="رسالة للعروسين"
+                  placeholder="اكتب كلمة طيبة للعروسين..."
+                ></textarea>
+              </div>
+
+              <p class="form-feedback is-error" id="formError" hidden></p>
+              <p class="form-feedback is-success" id="formSuccess" hidden></p>
+
+              <button class="submit-button" type="submit" id="submitButton">تأكيد الحضور</button>
+            </form>
+
+            <div class="guest-pass-wrap" id="guestPassWrap" hidden>
+              <div class="guest-pass-card" id="guestPassCard">
+                <div class="guest-pass-header">تذكرة دعوة</div>
+                <div class="guest-pass-body">
+                  <div class="guest-pass-destination">
+                    <p>المكان</p>
+                    <h3>Stage El-Nile</h3>
+                    <span id="guestPassName">ضيفنا العزيز</span>
+                  </div>
+                  <div class="guest-pass-meta">
+                    <div>
+                      <p>الأفراد</p>
+                      <strong id="guestPassGuests">1</strong>
+                    </div>
+                    <div>
+                      <p>التاريخ</p>
+                      <strong>02/07/2026</strong>
+                    </div>
+                    <div>
+                      <p>كود الدخول</p>
+                      <strong id="guestPassCode">HESH01</strong>
+                    </div>
+                  </div>
+                  <div class="guest-pass-barcode" id="guestPassBarcode" aria-hidden="true"></div>
+                  <p class="guest-pass-code-text" id="guestPassCodeText">HESH01</p>
+                </div>
+              </div>
+
+              <button class="download-button" id="downloadPassButton" type="button">
+                تحميل بطاقة الدعوة
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="invitation-section invitation-reveal-section social-section section-accent-right">
+          <img
+            class="section-accent"
+            src="style1-8.png"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+          />
+          <p class="section-kicker reveal-on-scroll">تابعونا</p>
+          <h2 class="section-title reveal-on-scroll" style="--reveal-delay: 0.08s;">تواصل معنا</h2>
+          <p class="social-copy reveal-on-scroll" style="--reveal-delay: 0.16s;">
+            تابعونا عبر منصات التواصل لمعرفة التحديثات والتفاصيل أولاً بأول.
+          </p>
+          <div class="social-links reveal-on-scroll" style="--reveal-delay: 0.24s;" aria-label="Sila social links">
+            <a
+              class="social-link"
+              href="https://www.facebook.com/m.hamed.mahm.ud.592719"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="khedr on Facebook"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M13.5 21v-7.2h2.6l.4-2.9h-3v-1.9c0-.9.3-1.5 1.6-1.5h1.6V5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.1H8.5v2.9H11V21h2.5Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span>Facebook</span>
+            </a>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/ma7md_khedr/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="khedr on Instagram"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M7.2 3h9.6A4.2 4.2 0 0 1 21 7.2v9.6a4.2 4.2 0 0 1-4.2 4.2H7.2A4.2 4.2 0 0 1 3 16.8V7.2A4.2 4.2 0 0 1 7.2 3Zm0 1.8A2.4 2.4 0 0 0 4.8 7.2v9.6a2.4 2.4 0 0 0 2.4 2.4h9.6a2.4 2.4 0 0 0 2.4-2.4V7.2a2.4 2.4 0 0 0-2.4-2.4H7.2Zm10.05 1.35a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="invitation.js"></script>
+  </body>
+</html>
