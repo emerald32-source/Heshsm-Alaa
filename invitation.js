@@ -117,7 +117,7 @@
     // إذا تعلّق الفيديو بسبب السيرفر، سيتم فتح الدعوة تلقائياً كخطة بديلة
     setTimeout(() => {
       finishIntro();
-    }, 6000); 
+    }, 5000); 
 
     try {
       const playPromise = introVideo.play();
