@@ -3,7 +3,7 @@
    ========================================= */
 @font-face {
   font-family: "B fantezy";
-  src: url("B-Fantezy.ttf") format("truetype");
+  src: url("b-fantezy.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: "saudi";
-  src: url("Saudi.ttf") format("truetype");
+  src: url("saudi.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
