@@ -521,4 +521,14 @@
   bindAudioToggle();
   updateCountdown();
   window.setInterval(updateCountdown, 1000);
+  // كود شاشة التحميل
+  window.addEventListener("load", function () {
+    const loadingScreen = document.getElementById("loadingScreen");
+    if (loadingScreen) {
+      // إخفاء شاشة التحميل بعد اكتمال تحميل الصفحة (مع تأخير نصف ثانية لشكل جمالي)
+      setTimeout(function () {
+        loadingScreen.classList.add("is-hidden");
+      }, 500);
+    }
+  });
 })();
