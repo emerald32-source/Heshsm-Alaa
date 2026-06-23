@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>هشام & آلاء | حفل زفاف</title>
+    <meta
+      name="description"
+      content="Hesham & Alaa wedding invitation. July 2, 2026."
+    />
+    <meta name="theme-color" content="#2d142c" />
+    <link rel="stylesheet" href="invitation.css" />
+    <style>
+      /* إزالة التظليل الأزرق عند الضغط على الهواتف المحمولة */
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      button, a, input, select, textarea {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body class="is-locked">
+    <div class="invite-shell">
+      <div
+        class="intro-overlay"
+        id="introOverlay"
+        role="button"
+        tabindex="0"
+        aria-label="Open invitation"
+      >
+        <img
+          class="intro-poster"
+          src="mh-w-evolope.jpg"
+          alt="Hesham and Alaa invitation envelope"
+        />
+        <video
+          id="introVideo"
+          class="intro-video"
+          preload="auto"
+          playsinline
+          muted
+          poster="mh-w-evolope.jpg"
+        >
+          <source src="mahmoud-heba-envelope.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <audio id="backgroundAudio" preload="auto" loop>
+        <source src="starpetal-grove.mp3" type="audio/mpeg" />
+      </audio>
+
+      <button
+        class="audio-toggle"
+        id="audioToggle"
+        type="button"
+        aria-label="Mute invitation music"
+        hidden
+      >
+        <span class="audio-toggle-icon" aria-hidden="true">
+          <svg class="audio-icon-on" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M4 14h3.8l4.6 4.2V5.8L7.8 10H4v4Zm12-6.5a5.5 5.5 0 0 1 0 9M18.6 5a9 9 0 0 1 0 14"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.7"
+            />
+          </svg>
+          <svg class="audio-icon-off" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M4 14h3.8l4.6 4.2V5.8L7.8 10H4v4Zm11.5-4.5 4.5 4.5m0-4.5-4.5 4.5"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.7"
+            />
+          </svg>
+        </span>
+        <span class="audio-toggle-label">Invitation music</span>
+      </button>
+
+      <div aria-hidden="true" class="invitation-floating-birds-layer">
+        <span class="ambient-creature invitation-floating-bird bird-one" data-kind="birds"></span>
+        <span
+          class="ambient-creature invitation-floating-bird invitation-floating-bird-secondary bird-two"
+          data-kind="birds"
+        ></span>
+        <span
+          class="ambient-creature invitation-floating-bird invitation-floating-bird-soft bird-three"
+          data-kind="birds"
+        ></span>
+        <span
+          class="ambient-creature invitation-floating-bird invitation-floating-bird-gentle bird-four"
+          data-kind="birds"
+        ></span>
+      </div>
+
+      <main class="invitation-page" id="invitationPage" aria-hidden="true">
+        <section class="hero-section">
+          <video class="hero-video" autoplay muted loop playsinline preload="auto">
+            <source src="mahmoud-heba-flowers.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-overlay"></div>
+        </section>
+
+        <section 
+          class="hero-countdown-section invitation-section invitation-reveal-section"
+          data-launch="2026-07-02T16:00:00+03:00"
+        >
+          <div class="names-surface reveal-on-scroll">
+            <h1 class="arabic-name">هشام</h1>
+            <span class="arabic-amp">&</span>
+            <h1 class="arabic-name">آلاء</h1>
+            <p class="wedding-label-ar">حفل زفاف</p>
+            <span aria-hidden="true" class="wedding-reveal-divider-ar"></span>
+            <p class="wedding-date-ar">02 / 07 / 2026</p>
+          </div>
+
+          <div class="countdown-surface">
+            <p class="section-kicker reveal-on-scroll" style="--reveal-delay: 0.05s;">الفرحة قربت</p>
+            <h2 class="section-title reveal-on-scroll" style="--reveal-delay: 0.1s;">العد التنازلي</h2>
+            <p class="section-description reveal-on-scroll" style="--reveal-delay: 0.15s;">
+              باقي من الزمن على يوم العمر
+            </p>
+
+            <div class="countdown-grid reveal-on-scroll" style="--reveal-delay: 0.2s;" aria-label="Countdown to Hesham and Alaa wedding">
+              <div class="countdown-item">
+                <span class="count-value" data-unit="days">00</span>
+                <span class="count-label">أيام</span>
+              </div>
+              <div class="countdown-item">
+                <span class="count-value" data-unit="hours">00</span>
+                <span class="count-label">ساعات</span>
+              </div>
+              <div class="countdown-item">
+                <span class="count-value" data-unit="minutes">00</span>
+                <span class="count-label">دقائق</span>
+              </div>
+              <div class="countdown-item">
+                <span class="count-value" data-unit="seconds">00</span>
+                <span class="count-label">ثواني</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="invitation-section invitation-reveal-section venue-section section-accent-left">
+          <img
+            class="section-accent"
+            src="style1-1.png"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+          />
+          <div class="section-heading">
+            <img
+              class="heading-icon reveal-on-scroll"
+              src="mosque-3.svg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+            />
+            <h2 class="section-title reveal-on-scroll" style="--reveal-delay: 0.08s;">مكان الحفل</h2>
+          </div>
+
+          <article class="venue-card reveal-on-scroll" style="--reveal-delay: 0.16s;">
+            <div class="venue-image-wrap">
+              <img class="venue-image" src="el-moshir-tantawy.png" alt="El-Moshir Tantawy Mosque" loading="lazy" />
+            </div>
+            <div class="venue-map-wrap">
+              <div class="venue-map-frame">
+                <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.340330335349!2d31.22035368567767!3d30.040811394971833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145841b4d2b56d8d%3A0xe8f3c1c93825df40!2sStage%20El%20Nile!5e0!3m2!1sar!2seg!4v178..."></iframe>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="invitation.js"></script>
+  </body>
+</html>
