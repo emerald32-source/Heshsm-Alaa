@@ -36,7 +36,7 @@
       >
         <img
           class="intro-poster"
-          src="ah-w-envelope.jpg"
+          src="ha-w-envelope.jpg"
           alt="Hesham and Alaa invitation envelope"
         />
         <video
@@ -45,9 +45,9 @@
           preload="auto"
           playsinline
           muted
-          poster="ah-w-envelope.jpg"
+          poster="ha-w-envelope.jpg"
         >
-          <source src="alaa-hesham-envelope.mp4" type="video/mp4" />
+          <source src="hesham-alaa-envelope.mp4" type="video/mp4" />
         </video>
       </div>
 
@@ -104,7 +104,7 @@
       <main class="invitation-page" id="invitationPage" aria-hidden="true">
         <section class="hero-section">
           <video class="hero-video" autoplay muted loop playsinline preload="auto">
-            <source src="alaa-hesham-flowers.mp4" type="video/mp4" />
+            <source src="hesham-alaa-flowers.mp4" type="video/mp4" />
           </video>
           <div class="hero-overlay"></div>
         </section>
@@ -352,4 +352,162 @@
                   />
                 </div>
                 <h3>التهاني والترحيب</h3>
-                <p
+                <p>9:30 PM</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="invitation-section invitation-reveal-section rsvp-section section-accent-left">
+          <img
+            class="section-accent"
+            src="style1-7.png"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+          />
+          <div class="section-heading">
+            <h2 class="section-title reveal-on-scroll">يسعدنا حضوركم</h2>
+            <p class="section-description reveal-on-scroll" style="--reveal-delay: 0.08s;">
+              We are pleased by your presence
+            </p>
+            <p class="section-note reveal-on-scroll" style="--reveal-delay: 0.16s;">
+              يرجى الرد قبل 25 يونيو 2026
+            </p>
+          </div>
+
+          <div class="rsvp-card reveal-on-scroll" style="--reveal-delay: 0.24s;">
+            <form class="rsvp-form" id="rsvpForm" action="https://formspree.io/f/mykayvlw" method="POST">
+              <div class="form-field">
+                <label for="guestName">الاسم بالكامل *</label>
+                <input id="guestName" name="الاسم" type="text" placeholder="الاسم الكريم" required />
+              </div>
+
+              <fieldset class="form-field attendance-group">
+                <legend>هل ستشرفنا بالحضور؟ *</legend>
+                <label class="choice-pill">
+                  <input type="radio" name="الحضور" value="نعم، بكل سرور" checked />
+                  <span>نعم، بكل سرور</span>
+                </label>
+                <label class="choice-pill">
+                  <input type="radio" name="الحضور" value="أعتذر عن الحضور" />
+                  <span>أعتذر عن الحضور</span>
+                </label>
+              </fieldset>
+
+              <div class="form-field">
+                <label>عدد المرافقين (شاملاً إياك)</label>
+                <div class="guest-stepper">
+                  <button type="button" class="stepper-button" data-step="-1" aria-label="Decrease guests">
+                    -
+                  </button>
+                  <span class="stepper-value" id="guestCountValue">1</span>
+                  <button type="button" class="stepper-button" data-step="1" aria-label="Increase guests">
+                    +
+                  </button>
+                </div>
+                <input id="guestCount" name="عدد الأفراد" type="hidden" value="1" />
+              </div>
+
+              <div class="form-field">
+                <label for="messageForCouple">تهنئة للعروسين (اختياري)</label>
+                <textarea
+                  id="messageForCouple"
+                  name="رسالة للعروسين"
+                  placeholder="اكتب كلمة طيبة للعروسين..."
+                ></textarea>
+              </div>
+
+              <p class="form-feedback is-error" id="formError" hidden></p>
+              <p class="form-feedback is-success" id="formSuccess" hidden></p>
+
+              <button class="submit-button" type="submit" id="submitButton">تأكيد الحضور</button>
+            </form>
+
+            <div class="guest-pass-wrap" id="guestPassWrap" hidden>
+              <div class="guest-pass-card" id="guestPassCard">
+                <div class="guest-pass-header">تذكرة دعوة</div>
+                <div class="guest-pass-body">
+                  <div class="guest-pass-destination">
+                    <p>المكان</p>
+                    <h3>Stage El-Nile</h3>
+                    <span id="guestPassName">ضيفنا العزيز</span>
+                  </div>
+                  <div class="guest-pass-meta">
+                    <div>
+                      <p>الأفراد</p>
+                      <strong id="guestPassGuests">1</strong>
+                    </div>
+                    <div>
+                      <p>التاريخ</p>
+                      <strong>02/07/2026</strong>
+                    </div>
+                    <div>
+                      <p>كود الدخول</p>
+                      <strong id="guestPassCode">HESH01</strong>
+                    </div>
+                  </div>
+                  <div class="guest-pass-barcode" id="guestPassBarcode" aria-hidden="true"></div>
+                  <p class="guest-pass-code-text" id="guestPassCodeText">HESH01</p>
+                </div>
+              </div>
+
+              <button class="download-button" id="downloadPassButton" type="button">
+                تحميل بطاقة الدعوة
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="invitation-section invitation-reveal-section social-section section-accent-right">
+          <img
+            class="section-accent"
+            src="style1-8.png"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+          />
+          <p class="section-kicker reveal-on-scroll">تابعونا</p>
+          <h2 class="section-title reveal-on-scroll" style="--reveal-delay: 0.08s;">تواصل معنا</h2>
+          <p class="social-copy reveal-on-scroll" style="--reveal-delay: 0.16s;">
+            تابعونا عبر منصات التواصل لمعرفة التحديثات والتفاصيل أولاً بأول.
+          </p>
+          <div class="social-links reveal-on-scroll" style="--reveal-delay: 0.24s;" aria-label="Sila social links">
+            <a
+              class="social-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Facebook"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M13.5 21v-7.2h2.6l.4-2.9h-3v-1.9c0-.9.3-1.5 1.6-1.5h1.6V5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.1H8.5v2.9H11V21h2.5Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span>Facebook</span>
+            </a>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M7.2 3h9.6A4.2 4.2 0 0 1 21 7.2v9.6a4.2 4.2 0 0 1-4.2 4.2H7.2A4.2 4.2 0 0 1 3 16.8V7.2A4.2 4.2 0 0 1 7.2 3Zm0 1.8A2.4 2.4 0 0 0 4.8 7.2v9.6a2.4 2.4 0 0 0 2.4 2.4h9.6a2.4 2.4 0 0 0 2.4-2.4V7.2a2.4 2.4 0 0 0-2.4-2.4H7.2Zm10.05 1.35a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="invitation.js"></script>
+  </body>
+</html>
